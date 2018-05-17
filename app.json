@@ -12,7 +12,7 @@
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "厨神",
+    "navigationBarTitleText": "菜谱百科",
     "navigationBarTextStyle":"black"
   },
   "tabBar": {
