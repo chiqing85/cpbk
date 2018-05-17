@@ -1,0 +1,143 @@
+/* pages/user/index.wxss */
+.userinfo {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.userinfo image {
+  width: 150rpx;
+  height: 200rpx;
+}
+
+.userinfo button {
+  position: absolute;
+  width: 200rpx;
+  height: 200rpx;
+  opacity: 0;
+
+}
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 50rpx;
+}
+
+.header{
+    position: relative;
+    height: 160rpx;
+    line-height: 100rpx;
+    padding:30rpx 30rpx 30rpx 150rpx;
+    box-sizing: border-box;
+    font-size: 28rpx;
+    color: #fff;
+    background: #23282D;
+    border-bottom:1px solid #e0e0e0; 
+}
+.header .thumb{
+    position: absolute;
+    left: 30rpx;
+    top: 30rpx;
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 50%;
+    border: 2rpx solid #fff;
+}
+.header .about{
+    float: right;
+}
+.main .bg{
+  height: 35rpx;
+  background: #f5f6f7;
+}
+.cart{
+  padding: 15rpx;
+  border-top: 1rpx solid #e0e0e0;
+}
+.cartTitl{
+  font-size: 25rpx;
+  font-weight: bold;
+}
+
+.timeline{
+  position: relative;
+  border-bottom: 1px solid #e0e0e0;
+}
+.timeline .clear{
+  padding: 10px 15px 5px 0;
+}
+.mt10-images {
+  float: left;
+  width: 25%;
+  margin: 0 5px 0 0;
+}
+.images-b {
+  margin: 0 5px 0 0;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 100%;
+}
+.mt10-images image{
+    display: block;
+    width: 100%;
+    background: #f9f9f9;
+}
+.timeline .h2{
+    padding: 1.5% 5px 0 0;
+    font-size: 18px;
+    color: #111;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 100%;
+    font-weight: 400;
+}
+.timeline span{
+    position: absolute;
+    bottom: 30rpx;
+    left: 180rpx;
+    display: block;
+    font-size: 12px;
+    line-height: 100%;
+    color: #888;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 50%;
+    white-space: nowrap;
+}
+.timeline:after {
+    clear: both;
+    content: ' ';
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+.cart-del {
+  position: absolute;
+  right: 20rpx;
+  top: 30%;
+  width: 80rpx;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  font-size: 44rpx;
+}
+
+
+
+.cart-no-data{
+    padding:40rpx 0;
+    color: #999;
+    text-align: center;
+}

@@ -1,0 +1,29 @@
+<!--pages/search/index.wxml-->
+<view class='form'>
+  <form bindsubmit="formSubmit">
+    <view class='section'>
+      <input name="search" placeholder="搜索菜谱、食材……" bindinput="inputsearch"/>
+    </view>
+    <view class='submit' catchtap="formSubmit"><text>搜索</text></view>
+  </form>
+</view>
+<view class='wxSearchKey'>
+  <view class='searchKey'>
+    <view class='chkeynau' style="display:{{searchHistory ? 'block':'none'}}" >
+      <view class='SearchTitle'> 历史搜索：</view>
+      <view class='SearchText'>
+        <span wx:for="{{searchHistory}}" wx:key="index" bindtap="wxSearchKeyTap" data-key="{{item}}">{{item.name}}</span>
+      </view>
+      <view class='del' bind:tap="del">
+        <image src='/images/font/del2.svg'></image>
+        清空
+      </view>
+    </view>
+    <view class='chkeynau'>
+      <view class='SearchTitle'> 热门搜索：</view>
+      <view class='SearchText'>
+        <span wx:for="{{hot}}" wx:key="index" bindtap="wxSearchKeyTap" data-key="{{item}}">{{item.name}}</span>
+      </view>
+    </view>
+  </view>
+</view>

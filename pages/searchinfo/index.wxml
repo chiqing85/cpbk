@@ -1,0 +1,19 @@
+<!--pages/list/index.wxml-->
+<view class='form'>
+  <navigator url="/pages/search/index" class='section'>搜索菜谱、食材……</navigator>
+  <view class='submit'>搜索</view>
+</view>
+<view class='mt10'>
+  <view class="timeline" wx:for="{{list.result['data']}}" wx:key="index">
+      <navigator url="/pages/info/index?id={{item.id}}" class="clear">
+        <view class='mt10-images'>
+          <view class='images-b'>
+            <image src="{{item.albums[0]}}" style="width: 80px; height: 80px;"></image>
+          </view>
+        </view>
+        <view class='h2'><text>{{item.title}}</text></view>
+        <p>{{item.burden}}</p>
+        <span>{{item.tags}}</span>
+      </navigator>
+  </view>
+</view>

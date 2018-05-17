@@ -1,0 +1,168 @@
+/* pages/info/index.wxss */
+page{
+  height: 100%;
+}
+.mian{
+  width: 100%;
+  height: 100%;
+}
+.info_image,.info_image image{
+  width: 100%;
+}
+.timeline {
+  padding-left: 20rpx;
+}
+.timeline .h2{
+    font-size: 22px;
+    padding: 10px 0;
+    line-height: 140%;
+    font-weight: 400;
+}
+.timeline .tags{
+  width: 95%;
+  margin: 0 auto;
+  font-size: 13px;
+  line-height: 26px;
+  color: #666;
+}
+.timeline .ul{
+  padding: 20rpx 0;
+}
+.timeline .li{
+  background: -webkit-linear-gradient(top,#ddd,#fff) repeat-x scroll 0 bottom/100% 1px;
+  padding: 10px 10px 10px 0;
+  font-weight: 400;
+  display: block;
+}
+.timeline .li.title{
+    padding: 0 0 10px 0;
+    font-size: 14px;
+    color: #666;
+}
+.timeline .li.ms{
+  font-size: 16px;
+  color: #111;
+}
+.timeline .li.ms>span{
+  display: inline-block;
+  width: 65%;
+  vertical-align: middle;
+  font-size: 16px;
+  color: #111;
+}
+.timeline .li.ms>text{
+  display: inline-block;
+  vertical-align: middle;
+  width: 25%;
+  margin-right:20px;
+  font-size: 16px;
+  text-align: right;
+  color: #888;
+}
+.timeline .h1{
+  width: 80%;
+  margin: 0 auto;
+  padding:50rpx 0;
+  text-align: center;
+  line-height: 30px;
+}
+.timeline .h1>span{
+  display: block;
+  width: 80%;
+  margin: auto;
+  border-bottom: 1px solid #888;
+}
+.timeline .h1>text{
+  display: block;
+  width: 60%;
+  margin: -13px auto;
+  text-align: center;
+  color: #3982f7;
+  background: #fff;
+}
+.timeline .steps{
+  width: 95%;
+  font-size: 25rpx;
+  color: #888;
+  margin: 10px;
+}
+.imtro{
+  width: 95%;
+  margin: 0 auto;
+  font-size: 13px;
+  text-indent:2em;
+  line-height: 26px;
+  color: #333;
+}
+.timeline image {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+.bg{
+  width: 100%;
+  height: 120rpx;
+}
+.movable{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+}
+.mian .tabBar{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 85rpx;
+  background: #fff;
+  border-top:1px solid #e0e0e0;
+  z-index: 101;
+ 
+}
+.tabbox{
+  width: 95%;
+  margin: 0 auto;
+  display: block;
+}
+.tabbox::after{
+  clear: both;
+  content: ' ';
+  display: block;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+.tabBar-ico{
+  float: left;
+  width: 33%;
+  display: block;
+  text-align: center;
+}
+.tabBar-ico navigator{
+  z-index: 100;
+}
+.tabBar-ico image {
+  display: inline-block;
+  width: 50rpx;
+  height: 50rpx;
+}
+.tabBar-ico text {
+  display: block;
+  font-size: 20rpx;
+  margin-top: -5rpx;
+  color: #888;
+}
+
+.mian .cart{
+  width: 90rpx;
+  height: 90rpx;
+  border-radius: 50%;
+  line-height: 90rpx;
+  text-align: center;
+  font-size: 25rpx;
+  background: rgba(0,0,0,.7);
+  color: #fff;
+}

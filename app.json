@@ -1,0 +1,45 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/user/index",
+    "pages/category/index",
+    "pages/search/index",
+    "pages/list/index",
+    "pages/info/index",
+    "pages/searchinfo/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "厨神",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "backgroundColor": "#fff",
+    "selectedColor":"#3982f7",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "enablePullDownRefresh": true,
+        "iconPath":"/images/000002.png",
+        "selectedIconPath":"/images/000004.png"
+      },
+      {
+        "pagePath": "pages/category/index",
+        "text": "热门菜系",
+        "enablePullDownRefresh": true,
+        "iconPath": "/images/0000012.png",
+        "selectedIconPath": "/images/0000014.png"
+      },
+      {
+        "pagePath": "pages/user/index",
+        "text": "关于我",
+        "enablePullDownRefresh": true,
+        "iconPath": "/images/0000042.png",
+        "selectedIconPath": "/images/0000044.png"
+      }
+    ]
+  }
+}

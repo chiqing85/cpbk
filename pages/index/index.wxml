@@ -1,0 +1,32 @@
+<!--index.wxml-->
+<view class='main'>
+  <view class='form'>
+    <navigator url="/pages/search/index" class='section'>搜索菜谱、食材……</navigator>
+    <view class='submit'>搜索</view>
+  </view>
+
+  <swiper indicator-dots="true" autoplay="true" interval="{{interval}}" duration="{{duration}}" circular="true">
+        <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+            <swiper-item>
+                <image src="{{item.url}}" class="slide-image" width="100%" bindtap="swipclick" data-id="{{item.id}}"/>
+            </swiper-item>
+        </block>
+    </swiper>
+</view>
+
+<!-- 分类 -->
+<view class='content'>
+  <view class='h1'><span></span><text>为您推荐</text></view>
+  <view class="timeline" wx:for="{{scene}}" wx:key="index">
+      <navigator url="/pages/info/index?id={{item.id}}" class="clear">
+        <view class='mt10-images'>
+          <view class='images-b'>
+            <image src="{{item.albums[0]}}" style="width: 80px; height: 80px;"></image>
+          </view>
+        </view>
+        <view class='h2'><text>{{item.title}}</text></view>
+        <p>{{item.burden}}</p>
+        <span>{{item.tags}}</span>
+      </navigator>
+  </view>
+</view>

@@ -1,0 +1,3 @@
+/* pages/searchinfo/index.wxss */
+@import '../search/index.wxss';
+@import '../list/index.wxss';

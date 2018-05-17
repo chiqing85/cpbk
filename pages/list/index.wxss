@@ -1,0 +1,65 @@
+/* pages/list/index.wxss */
+.timeline{
+  padding-left: 20rpx;
+}
+.timeline .clear{
+  padding: 10px 15px 5px 0;
+}
+.mt10-images{
+  float: left;
+  width: 25%;
+  margin: 0 5px 0 0;
+}
+.images-b{
+  margin: 0 5px 0 0;
+  display: block;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 100%;
+}
+.mt10-images image{
+    display: block;
+    width: 100%;
+    background: #f9f9f9;
+}
+.timeline .h2{
+    padding: 1.5% 5px 0 0;
+    font-size: 18px;
+    color: #111;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 100%;
+    font-weight: 400;
+}
+.timeline p{
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    line-height: 100%;
+    padding: 3% 5px 3% 0;
+    height: 1em;
+    font-size: 14px;
+    color: #888;
+}
+.timeline span{
+    display: block;
+    font-size: 12px;
+    line-height: 100%;
+    color: #888;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 30%;
+    white-space: nowrap;
+}
+.clear:after {
+    clear: both;
+    content: ' ';
+    display: block;
+    height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+@import '../search/index.wxss';

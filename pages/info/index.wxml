@@ -1,0 +1,51 @@
+<!--pages/info/index.wxml-->
+<view class='mian'>
+  <view class='info_image'>
+    <image src='{{info.albums[0]}}'></image>
+  </view>
+  <view class='timeline'>
+    <view class='h2'> <text>{{info.title}}</text></view>
+    <view class='tags'><text>· {{info.tags}}</text></view>
+    <view class="ul">
+      <view class='li title'>主料</view>
+      <view class='li ms'>
+        <span>{{info.ingredients[0]}}</span>
+        <text>{{info.ingredients[1]}}</text>
+      </view>
+
+      <view class='li title'>辅料</view>
+      <view class='li ms' wx:for="{{info.burden}}" wx:key="index">
+        <span>{{item[0]}}</span>
+         <text>{{item[1]}}</text> 
+      </view>
+    </view>
+    <view class='h1'><span></span><text>{{info.title}}的做法步骤</text></view>
+    <view wx:for="{{info.steps}}" wx:key="index">
+      <image src='{{item.img}}'></image>
+      <view class='steps'><span class="steps-text">{{item.step}}</span></view>
+    </view>
+    <view class='imtro'><p>{{info.imtro}}</p></view>
+  </view>
+ <view class='bg'></view>
+ <view class='tabBar'>
+    <view class='tabbox'>
+      <view class='tabBar-ico' bindtap="tabBar" data-url="/pages/index/index">
+        <image src='/images/000002.png'></image>
+        <text>首页</text>
+      </view>
+      <view class='tabBar-ico' bindtap="tabBar" data-url="/pages/category/index">
+          <image src='/images/0000012.png'></image>
+          <text>热门菜系</text>
+      </view>
+      <view class='tabBar-ico' bindtap="tabBar" data-url="/pages/user/index">
+          <image src='/images/0000042.png'></image>
+          <text>关于我</text>
+      </view>
+    </view>
+ </view>
+ <movable-area class="movable">
+  <movable-view direction="all" x="{{x}}" y="{{y}} " class='cart'>
+    <view bind:tap="cart" data-cart='{"cid":{{info.id}},"title":"{{info.title}}","albums":"{{info.albums[0]}}","tags":"{{info.tags}}"}'>收藏</view>
+  </movable-view>
+  </movable-area>
+</view>

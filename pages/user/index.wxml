@@ -1,0 +1,43 @@
+<!--index.wxml-->
+<view class="container" wx:if="{{!hasUserInfo && !canIUse}}">
+    <view class="userinfo">
+      <image src='/images/userlogin.svg' class='userlogin'></image>
+       <button bindtap='userinfo' open-type="getUserInfo">登录</button> 
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+</view>
+<view class='main' wx:else>
+  <view class="header">
+      <image src="{{userInfo.avatarUrl}}" class="thumb"></image>
+      <text class="nickname">{{userInfo.nickName}}</text>
+      <text class="about" bindtap="bindViewTap">查看启动日志</text>
+  </view>
+  <view class='bg'>  </view>
+  <view class='cart'>
+    <view class='cartTitl'>我的收藏</view>
+    <view wx:if="{{car}}">
+      <view class='timeline' wx:for="{{car}}" wx:key="index">
+        <navigator url='/pages/info/index?id={{item.cid}}' class="clear">
+          <view class='mt10-images'>
+            <view class='images-b'>
+              <image src='{{item.albums}}' style="width: 80px; height: 80px;"></image>
+            </view>
+          </view>
+          <view class='h2'>
+            <text>{{item.title}}</text>
+          </view>
+        </navigator>
+        
+         <span>{{item.tags}}</span>
+         <view class="cart-del">
+            <image src='/images/font/del.png' style='width:60rpx;height:60rpx;' bind:tap="chstart"  data-id="{{item.cid}}"></image>
+         </view>
+      </view>
+    </view>
+    <view wx:else>
+        <view class="cart-no-data">您还没有收藏任何菜谱秘籍哦~~</view>
+    </view>
+  </view>
+</view>

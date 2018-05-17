@@ -1,0 +1,16 @@
+<!--pages/category/index.wxml-->
+<view class='main'>
+  <view class='form'>
+    <navigator url="/pages/search/index" class='section'>搜索菜谱、食材……</navigator>
+    <view class='submit'>搜索</view>
+  </view>
+  <view class='category-box'>
+    <view class='moduleWrap' wx:for="{{category.result[0]['list']}}" wx:key="index">
+      <view class='bg' style='background:url({{item.images}});background-size: cover'></view>
+      <view class='bgcolor'></view>
+      <navigator url="/pages/list/index?id={{item.id}}&name={{item.name}}">
+        <view class="newest-text"><text>{{item.name}}</text></view>
+      </navigator>
+    </view>  
+  </view>
+</view>

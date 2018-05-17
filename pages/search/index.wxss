@@ -1,0 +1,88 @@
+/* pages/search/index.wxss */
+.form {
+  width: 90%;
+  margin: 10rpx auto;
+  padding: 10rpx 0;
+}
+.form::after{
+  content: '';
+  clear: both;
+  display: block;
+}
+.section {
+  float: left;
+  width: 100%;
+  border: 1px solid #e0e0e0;
+  font-size: 30rpx;
+  height: 71rpx;
+  text-indent: .7em;
+  line-height: 71rpx;
+  border-radius: 60rpx;
+}
+.section input {
+  width: 95%;
+  height: 71rpx;
+  margin: 0 auto;
+  line-height: 71rpx;
+}
+.btn-area {
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 19%; 
+}
+.submit{
+  position: absolute;
+  top:20rpx;
+  right: 40rpx;
+  width: 100rpx;
+  height: 47rpx;
+  padding: 13rpx 18rpx;
+  border-left: 1rpx solid #e0e0e0;
+  text-align: center;
+  z-index: 105;
+}
+
+.wxSearchKey{
+  position: absolute;
+  top: 120rpx;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-top: 1px #eee solid;
+  background: #f6f8f9;
+}
+.searchKey{
+  width: 90%;
+  margin: 10rpx auto 0;
+}
+.chkeynau{
+  margin: 0 0 50rpx;
+}
+.SearchTitle{
+  font-size: 30rpx;
+  margin-bottom: 20rpx;
+}
+.SearchText span{
+  margin:0 15rpx 15rpx;
+  padding:5rpx 25rpx;
+  font-size: 26rpx;
+  border: 1px solid #666;
+  border-radius: 10rpx;
+  display: inline-block;
+}
+.del {
+  display: inline-block;
+  padding:5rpx 20rpx;
+  float: right;
+  font-size: 30rpx;
+  border: 1px solid #666;
+  border-radius: 10rpx;
+  background: #666;
+  color: #fff;
+}
+.del image {
+  width: 30rpx;
+  height: 30rpx;
+  color: #fff;
+}
