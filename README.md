@@ -1,7 +1,6 @@
 # 菜谱百科 - 小程序
 ### 项目说明：
 > 微信小程序：菜谱百科 <br />
-> 数据来源: `https://csbd.ga`
 
 ### 项目截图:
 ![](http://yun.topthink.com/Uploads/Editor/2018-05-18/5afdb20aaff11.jpg) <br />
